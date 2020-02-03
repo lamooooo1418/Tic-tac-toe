@@ -10,22 +10,39 @@ let Seq7 = $('#7');
 let Seq8 = $('#8');
 let Seq9 = $('#9');
 let Button = $('#Restart')
+let Messege = $('#Messege');
+let XScore = $('#X');
+let OScore = $('#O');
 let count = 0;
 let OCount = 0;
 let Xcount = 0;
+let TieCount = 0;
+var mySound;
+
+let TieScore = $('#Tie');
+Messege.text("o's Turn");
+XScore.text('X Wins  :' + Xcount);
+OScore.text('O Wins  :  ' + OCount);
+TieScore.text('Tie   :    ' + TieCount);
+
+
 $('.cell').on('click', function() {
+
+
     if ($(this).hasClass('o') || $(this).hasClass('x'))
         alert("This is already taken ");
     else if (count % 2 === 0) {
         $(this).text('o');
         $(this).addClass('o');
         count++;
-
+        Messege.text("X's Turn");
 
     } else if (count % 2 !== 0) {
+
         $(this).text('x');
         $(this).addClass('x');
         count++;
+        Messege.text("O's Turn");
     }
     if (Seq1.hasClass('o') && Seq2.hasClass('o') && Seq3.hasClass('o') ||
         (Seq4.hasClass('o') && Seq5.hasClass('o') && Seq6.hasClass('o')) ||
@@ -36,8 +53,11 @@ $('.cell').on('click', function() {
         (Seq2.hasClass('o') && Seq5.hasClass('o') && Seq8.hasClass('o')) ||
         (Seq3.hasClass('o') && Seq5.hasClass('o') && Seq7.hasClass('o'))) {
         alert("Congratulation Dear O you Win Hardluck X");
-
+        Messege.text("o's Turn");
         OCount++;
+        XScore.text('X Wins  :' + Xcount);
+        OScore.text('O Wins  :  ' + OCount);
+        TieScore.text('Tie   :    ' + TieCount);
 
 
         $(Seq1).text('');
@@ -88,7 +108,12 @@ $('.cell').on('click', function() {
         (Seq2.hasClass('o') && Seq5.hasClass('o') && Seq8.hasClass('o')) ||
         (Seq3.hasClass('x') && Seq5.hasClass('x') && Seq7.hasClass('x'))) {
         alert("Congratulation Dear X  you Win Hardluck O ");
-        Xcount = 0;
+        Messege.text("o's Turn");
+        Xcount++;
+        XScore.text('X Wins  :' + Xcount);
+        OScore.text('O Wins  :  ' + OCount);
+        TieScore.text('Tie   :    ' + TieCount);
+
         $(Seq1).text('');
         Seq1.removeClass('x');
         Seq1.removeClass('o');
@@ -170,7 +195,17 @@ $('.cell').on('click', function() {
         Seq9.removeClass('x');
         Seq9.removeClass('o');
         count = 0;
+        Messege.text("o's Turn");
+        TieCount++;
+        XScore.text('X Wins  :' + Xcount);
+        OScore.text('O Wins  :  ' + OCount);
+        TieScore.text('Tie   :    ' + TieCount);
+
     }
+
+    mySound = new Audio('ClickSound.mp3');
+    mySound.play();
+
 })
 
 $('#Restart').on('click', function() {
@@ -213,9 +248,10 @@ $('#Restart').on('click', function() {
     Seq9.removeClass('x');
     Seq9.removeClass('o');
     count = 0;
-
-
-
+    Messege.text("o's Turn");
+    XScore.text('X Wins  :' + Xcount);
+    OScore.text('O Wins  :  ' + OCount);
+    TieScore.text('Tie   :    ' + TieCount);
 
 
 

@@ -15,11 +15,12 @@
 
 
     <h3> Tic Tac Toe Game </h3>
-
+    <div class="Turn">
+        <span class="Messege " id="Messege"></span>
+    </div>
 
 
     <div class="Cells" id="Seq">
-
 
         <table>
             <tr>
@@ -38,9 +39,16 @@
                 <td class="cell" id="9"> </td>
             </tr>
         </table>
-
+        <div class="Player">
+            <span class="Player" id="Player1">     Player1      </span>
+            <span class="Player" id="Player2">       Player 2    </span>
+        </div>
     </div>
-    <button class="Restart" id="Restart">Restart again </button>
+
+    <button class="Restart1" id="Restart">Restart again </button>
+    <p class="P" id="X"> X: </p>
+    <p class="P" id="O"> O: </p>
+    <p class="P" id="Tie"> O: </p>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="Tictatoe.js"></script>
