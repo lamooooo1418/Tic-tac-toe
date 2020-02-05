@@ -12,6 +12,10 @@ Tic tac toe Game is game in which one player Represent Xs and another Represent 
 ### Description for the Winner 
 - if condition that check After each click on the board if vertical ,Horiztanlly or Daiognal has the same Symbol So the Player Wins and Reinintialize it .
 
+
+
+  
+![Wireframe](img.png)
 ### User Stories
 
 - As a user, I should be able to start a new tic tac toe game
@@ -41,5 +45,4 @@ Tic tac toe Game is game in which one player Represent Xs and another Represent 
     remove();
 })
  ```
-  
-![Wireframe](img.png)
+
