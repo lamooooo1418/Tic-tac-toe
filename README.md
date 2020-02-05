@@ -10,8 +10,7 @@ Tic tac toe Game is game in which one player Represent Xs and another Represent 
 
 
 ### Description for the Winner 
-- if condition that check After each click on the board if vertical ,Horiztanlly or Daiognal has the same Symbol So the Player Wins and Reinintialize it .
-
+if condition that check After each click on the board of vertical ,Horizontally or Diagonally has the same Symbol So the Player Wins and re Initialize the Cells . Otherwise it's Tie game
 
 
   
