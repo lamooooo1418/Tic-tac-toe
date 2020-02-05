@@ -79,7 +79,49 @@ $('.cell').on('click', function() {
             XScore.text('X Wins  :' + Xcount);
             OScore.text('O Wins  :  ' + OCount);
             TieScore.text('Tie   :    ' + TieCount);
-            remove();
+
+
+
+
+            $(Seq1).text('');
+            Seq1.removeClass('x');
+            Seq1.removeClass('o');
+
+            $(Seq2).text('');
+            Seq2.removeClass('x');
+            Seq2.removeClass('o');
+
+            $(Seq3).text('');
+            Seq3.removeClass('x');
+            Seq3.removeClass('o');
+
+            $(Seq4).text('');
+            Seq4.removeClass('x');
+            Seq4.removeClass('o');
+
+            $(Seq5).text('');
+            Seq5.removeClass('x');
+            Seq5.removeClass('o');
+
+            $(Seq6).text('');
+            Seq6.removeClass('x');
+            Seq6.removeClass('o');
+
+
+            $(Seq7).text('');
+            Seq7.removeClass('x');
+            Seq7.removeClass('o');
+
+
+            $(Seq8).text('');
+            Seq8.removeClass('x');
+            Seq8.removeClass('o');
+
+
+            $(Seq9).text('');
+            Seq9.removeClass('x');
+            Seq9.removeClass('o');
+            count = 0;
 
 
 
