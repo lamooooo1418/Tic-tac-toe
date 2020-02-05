@@ -23,7 +23,8 @@ Tic tac toe Game is game in which one player Represent Xs and another Represent 
  ### Restart function 
 
 
- ``` $('#Restart').on('click', function() {
+ ``` 
+   $('#Restart').on('click', function() {
     Messege.text("o's Turn");
     XScore.text('X Wins  :' + Xcount);
     OScore.text('O Wins  :  ' + OCount);
