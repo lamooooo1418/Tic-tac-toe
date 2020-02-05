@@ -79,7 +79,7 @@ $('.cell').on('click', function() {
             XScore.text('X Wins  :' + Xcount);
             OScore.text('O Wins  :  ' + OCount);
             TieScore.text('Tie   :    ' + TieCount);
-
+            remove();
 
         }
         if (count === 9) {
