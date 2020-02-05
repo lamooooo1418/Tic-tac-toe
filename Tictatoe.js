@@ -62,7 +62,7 @@ $('.cell').on('click', function() {
             OScore.text('O Wins  :  ' + OCount);
             TieScore.text('Tie   :    ' + TieCount);
 
-            //Re initilaize it .
+            //Re initilaize Cells .
             remove();
 
         } else if (Seq1.hasClass('x') && Seq2.hasClass('x') && Seq3.hasClass('x') ||
